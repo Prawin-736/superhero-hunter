@@ -1,0 +1,316 @@
+/* ******general****** */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+}
+
+
+body {
+    background-color:lightgray;
+    font-family:sans-serif;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+/* *******navbar*********** */
+
+.navbar {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height:12vh;
+    background-color: black;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 25px;
+    padding: 0 20px;
+}
+
+.navbar-logo {
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar-logo a{
+    text-decoration: none;
+    color:white;
+}
+h3{
+    color:white;
+}
+
+.logo {
+    width:7.2rem;
+    min-width: 15px;
+}
+
+.favAndHome-btn {
+    align-items: center;
+    gap: 10px;
+}
+
+.linkPage{
+    justify-content: center;
+    text-decoration: none;
+}
+.navbvar .btn{
+    border: none;
+    outline: none;
+    padding: 10px;
+    background-color:none;
+    border-radius: 3px;
+    color:white;
+    height: 40px;
+    font-size: 16px;
+
+}
+
+.btn {
+    border: none;
+    outline: none;
+    padding: 10px;
+    background-color:red;
+    border-radius: 3px;
+    color:white;
+    height: 40px;
+    font-size: 16px;
+
+}
+.btn i:hover{
+    font-size: 20px;
+}
+.linkPage .fav-btn {
+    font-size: 23px;
+    width: 170px;
+    outline:none;
+    border:none;
+    color:red;
+    background-color:black;
+    
+}
+.linkPage .fav-btn i{
+    color:red   ;
+}
+
+
+/* ************searchbar and searchresult********************** */
+/* ********searchbar********* */
+
+.search-bar-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background-color:white;
+    width:100vw;
+}
+
+.search-icon-container {
+    background: grey;
+    color:red;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    margin-top: 15px;
+    border-radius: 10px 0 0 10px;
+}
+
+.searchBar-items {
+    min-width: 40%;
+}
+
+#search-bar {
+    background:grey;
+    color:white;
+    min-width: 550px;
+    height: 50px;
+    font-size: 20px;
+    font-weight:bold;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    outline: none;
+    padding: 10px;
+    letter-spacing: 2px;
+    margin-top: 15px;
+    z-index: 1;
+}
+
+input::placeholder {
+    color:white;
+    font-size: 20px;
+}
+
+/* **********searchresult********* */
+
+.img-info {
+    gap: 10px;
+}
+
+.img-info img {
+    width: 65px;
+}
+
+#search-results {
+    min-width: 435px;
+    margin-top: 30px;
+    list-style: none;
+    z-index: 2;
+}
+
+#search-results li {
+    background:white ;  
+    height: 100px;
+    color:black;
+    width: 100%;
+}
+
+#search-results li:hover .hero-name {
+    color: red;
+}
+
+.search-result {
+    padding: 0 5px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid black;
+    width: inherit;
+}
+
+.character-info {
+    text-decoration: none;
+    color:black;
+}
+
+.hero-info {
+    display: flex;
+    align-items: center;
+}
+
+.hero-name {
+    font-size: 26px;
+    font-weight:bolder;
+}
+
+.buttons {
+    gap: 5px;
+    padding: 0 10px;
+}
+
+
+/* *************************Favourite Add & Remove notify********************** */
+.fav-toast,.remove-toast {
+    position: absolute;
+    bottom: 100px;
+    font-size: 18px;
+    width: 350px;
+    color: white;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    z-index: 2;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 10px;
+    background-color:red;
+}
+
+.fav-toast[data-visiblity="show"],.remove-toast[data-visiblity="show"] {
+    display: block;
+}
+
+.fav-toast[data-visiblity="hide"],.remove-toast[data-visiblity="hide"] {
+    display: none;
+}
+
+
+
+
+
+.charList {
+    margin:30px 0px 30px;
+    width: 100%;
+    max-height: 75vh;
+    position: absolute;
+    z-index: 14;
+    background:lightgrey;
+    border-radius: 0.2rem;
+    padding: 0.5rem;
+    overflow: hidden;
+    overflow-y: scroll;
+    top: 20%;
+  }
+  .charList::-webkit-scrollbar {
+    width: 15px;
+  }
+  .charList:-webkit-scrollbar-track {
+    background:black;
+  }
+  .charList::-webkit-scrollbar-thumb {
+    background: red;
+    border-radius: 2.5px;
+  }
+  .charList::-webkit-scrollbar-thumb:hover {
+    background: red;
+  }
+  .charListUl {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+
+
+  .card {
+    width: 270px;
+    height: 300px;
+    margin: 1rem;
+    background:white;
+    border-radius: 0.2rem;
+    list-style: none;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    gap: 5px;
+    z-index: 2;
+    backdrop-filter: blur(3px);
+  }
+  
+  .card:hover {
+    background-color:lightgray;
+  }
+  .card img {
+    width: 100%;
+    height: 60%;
+    background-size:auto;
+    object-fit:cover;
+  }
+  .name {
+    font-size: 20px;
+    color: black;
+    font-weight:bold;
+    display: block;
+    padding-bottom:10px;
+  }
+
+
+
