@@ -1,0 +1,59 @@
+/* general */
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color:white;
+}
+
+.info {
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+
+/* moredeinfoconatiner */
+
+#more-info-container {
+    background-color:lightgrey;
+    width: 70%;
+    height: auto;
+    gap: 15px;
+    padding: 15px 50px;
+    border-radius: 10px;
+}
+
+.hero-name {
+    justify-content: center;
+    text-transform: uppercase;
+    font-size:2rem;
+    padding-bottom:10px;
+    border-bottom: 1px solid black;
+}
+
+.heroimg-moreinfo {
+    gap: 50px;
+}
+
+.hero-img {
+    width: 20%;
+    height: auto;
+    min-width: 120px;
+}
+
+.more-info {
+    gap: 15px;
+    font-size: 1.3rem;
+}
+
+.id,.comics,.series,.stories {
+    gap: 5px;
+}
+
+.hero-discription{
+    margin-top: 10px;
+    font-size: 1.3rem;
+}
+.hero-discription b{
+    font-size: 1.5rem;
+}
+

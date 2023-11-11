@@ -1,0 +1,58 @@
+body{
+    overflow-x: hidden;
+}
+#u-fav-hero{
+    background-color:white;
+    height:100px;
+    width:100vw ;
+    display:flex;
+    justify-content:center;
+    
+}
+#u-fav-hero h3{
+    margin-top:40px;
+    font-size:25px;
+    color:black;
+}
+#u-fav-hero h3 i{
+    color:red;
+}
+
+
+.cards-container{
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.character-info .btn{ 
+    width: 100%;
+}
+
+.card{
+    background-color:white;
+    height: 480px;
+    width: 250px;
+    margin: 40px 20px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    gap: 5px;
+    /* z-index: 2; */
+}
+
+.name{
+    font-size: 160%;
+    color:black;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    padding-bottom:6px;
+    padding-top:6px;
+}
+
+.remove-btn{
+    color:white;
+    background-color:grey;
+
+
+}
+
